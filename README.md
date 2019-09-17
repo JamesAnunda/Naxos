@@ -10,4 +10,4 @@ TBA
 TBA
 
 # Other info
-Check out our [OrgSync](https://orgsync.com/139217/chapter) for photos from this event!
+Check out our [OrgSync](https://orgsync.com/139217/photos/albums/130524) for photos from this event!
