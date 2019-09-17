@@ -1,0 +1,25 @@
+{
+  "name": "naxos",
+  "version": "1.0.0",
+  "description": "This app was created during the 2019 hackathon! We decided to make this app Cross-platofum using React Native!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Infomation-Technolgy-Club-of-Ivy-Tech/Naxos.git"
+  },
+  "keywords": [
+    "2019",
+    "Hackathon",
+    "Firstnet",
+    "AT&T"
+  ],
+  "author": "Naxos Develoepers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Infomation-Technolgy-Club-of-Ivy-Tech/Naxos/issues"
+  },
+  "homepage": "https://github.com/Infomation-Technolgy-Club-of-Ivy-Tech/Naxos#readme"
+}
