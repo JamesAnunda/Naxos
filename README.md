@@ -1,24 +1,13 @@
 # Naxos
-We started this app during the 2019 FirstNet Hackathon! We plan adding more to it! Stay turn!
+We started this app during the 2019 FirstNet Hackathon! Naxos is a cross-platforum application that will notify EMS and surronding communities in the event of a love one or someone you know OD on Opiods. This app will alert anyone who has the known drug, narcan, and is willing to adminster it to the invidual. This app was built focusing on communituy engagement, helping First Responders espically EMS, and fighting back against the Opioid crisis that is happening here in Indiana and around the country!
 
 # How to start the app
 ```
-npm install -g ionic cordova
-```
-
-```
-cd blank
-```
-
-then run
-```
-run ng-serve
+TBA
 ```
 
 # Built With
-* [Ionic Framework](https://ionicframework.com/docs) - The web framework used
-* [IBM Wastion API](https://www.ibm.com/watson/developer) - API used 
-* [Firebase](https://firebase.google.com/) - Used for the backend and user authentcation
+TBA
 
 # Other info
-Check out our OrgSync for photos from this event!
+Check out our [OrgSync](https://orgsync.com/139217/chapter) for photos from this event!
