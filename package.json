@@ -1,25 +1,44 @@
 {
-  "name": "naxos",
-  "version": "1.0.0",
-  "description": "This app was created during the 2019 hackathon! We decided to make this app Cross-platofum using React Native!",
-  "main": "index.js",
+  "name": "myapp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.24",
+    "@fortawesome/free-solid-svg-icons": "^5.11.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@reach/router": "^1.2.1",
+    "bootstrap": "^4.3.1",
+    "firebase": "^6.6.2",
+    "google-maps-react": "^2.0.2",
+    "react": "^16.9.0",
+    "react-bootstrap": "^1.0.0-beta.12",
+    "react-dom": "^16.9.0",
+    "react-fontawesome": "^1.6.1",
+    "react-scripts": "3.1.2",
+    "use-position": "0.0.6"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Infomation-Technolgy-Club-of-Ivy-Tech/Naxos.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "keywords": [
-    "2019",
-    "Hackathon",
-    "Firstnet",
-    "AT&T"
-  ],
-  "author": "Naxos Develoepers",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Infomation-Technolgy-Club-of-Ivy-Tech/Naxos/issues"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
-  "homepage": "https://github.com/Infomation-Technolgy-Club-of-Ivy-Tech/Naxos#readme"
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.1"
+  }
 }
