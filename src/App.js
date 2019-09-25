@@ -60,10 +60,10 @@ componentDidMount () {
          this.setState({user})
          console.log('logged in');
          console.log(user.uid);
-         navigate('/Helper');
+         navigate('/Role');
       } else{
         console.log('logged out');
-        navigate('/Helper');
+        navigate('/');
       }
   });
   
