@@ -1,5 +1,7 @@
 html, body {
   height: 100%;
+  padding:0;
+  margin:0;
 }
 
 body {
@@ -9,6 +11,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding:0;
 }
 
 code {
@@ -16,11 +19,16 @@ code {
     monospace;
 }
 
-.loginContainer{
-  background-image: url('bg.jpg');
+.wrapper{
   background-position: center;
   background-size:cover;
   height: calc(100vh);
+  margin:0;
+  padding:0;
+}
+
+.loginContainer{
+  background-image: url('bg.jpg');
 }
 
 .vertical-center {
@@ -29,4 +37,63 @@ code {
 
   display: flex;
   align-items: center;
+}
+
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: #ff1c68;
+  transform-origin: 50% 50%;
+}
+
+.rotate {
+  animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: yellow;}
+  100% {background-color: red;}
+}
+
+.heart {
+	font-size: 150px;
+	color: #e00;
+	animation: beat .25s infinite alternate;
+	transform-origin: center;
+}
+
+/* Heart beat animation */
+@keyframes beat{
+	to { transform: scale(1.4); }
+}
+
+.bgFlash {
+  animation: colorchange 1s infinite; /* animation-name followed by duration in seconds*/
+     /* you could also use milliseconds (ms) or something like 2.5s */
+  -webkit-animation: colorchange 1s infinite; /* Chrome and Safari */
+}
+
+@keyframes colorchange
+{
+  0%   {background-color: white;}
+  25%  {background-color: yellow;}
+  50%  {background-color: yellow;}
+  100% {background-color: white;}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+  0%   {background-color: white;}
+  25%  {background-color: yellow;}
+  50%  {background-color: yellow;}
+  100% {background-color: white;}
 }

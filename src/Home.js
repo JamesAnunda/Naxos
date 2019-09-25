@@ -1,21 +1,37 @@
 import React, { Component } from 'react';
-import GoogleMap from './GoogleMap';
+//import GoogleMap from './GoogleMap';
+import OfferHelp from './OfferHelp';
 
 class Home extends Component {
 
-  componentDidMount(){
+  constructor() {
+    super();
+    this.state = {
+      help: null
+    };
+    
 
   }
+
+  
+  componentDidMount(){
+    this.setState({help:1})
+
+  }
+
+
 
   render() {
 
 const { lat, lng } = this.props;
 
     return (
-<div>
-{lat && (
-<GoogleMap lat={lat} lng={lng}/>
-)}
+<div className="p-4">
+
+{lat}{"  "}{lng}
+
+{this.state.help && (<OfferHelp />)}
+
 </div>
     
     );

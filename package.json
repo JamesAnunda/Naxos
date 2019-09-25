@@ -1,5 +1,5 @@
 {
-  "name": "myapp",
+  "name": "naxos",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,6 +14,7 @@
     "react-bootstrap": "^1.0.0-beta.12",
     "react-dom": "^16.9.0",
     "react-fontawesome": "^1.6.1",
+    "react-pose": "^4.0.8",
     "react-scripts": "3.1.2",
     "use-position": "0.0.6"
   },
@@ -40,5 +41,6 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.11.1"
-  }
+  },
+  "homepage" : "http://kirkh34.github.io/Naxos"
 }

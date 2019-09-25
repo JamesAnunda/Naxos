@@ -5,13 +5,15 @@ import './App.css';
 
 import Login from './Login';
 import Home from './Home';
+import Role from './Role';
+import Helper from './Helper';
 
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeartbeat, faSpinner} from '@fortawesome/free-solid-svg-icons';
+import { faHeartbeat, faSpinner, faHeart} from '@fortawesome/free-solid-svg-icons';
 
-library.add(faHeartbeat, faSpinner);
+library.add(faHeartbeat, faSpinner, faHeart);
 
 
 
@@ -58,10 +60,10 @@ componentDidMount () {
          this.setState({user})
          console.log('logged in');
          console.log(user.uid);
-         navigate('/home');
+         navigate('/Helper');
       } else{
         console.log('logged out');
-        navigate('/');
+        navigate('/Helper');
       }
   });
   
@@ -156,7 +158,9 @@ Firebase.auth().signInAnonymously().catch(function(error) {
 <div>
 <Router>
   <Login path='/' authAnon={this.authAnon} />
-  <Home path='/home' lat={this.state.lat} lng={this.state.lng}/>
+  <Home path='/Home' lat={this.state.lat} lng={this.state.lng}/>
+  <Helper path='/Helper' lat={this.state.lat} lng={this.state.lng}/>
+  <Role path='/Role'/>
 </Router>
 
 

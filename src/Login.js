@@ -17,7 +17,7 @@ class Login extends Component {
 
     return (
   
-<div className="loginContainer p-4">
+<div className="wrapper loginContainer p-4">
   <div className="container h-100 ">
     <div className="row h-100 justify-content-center align-items-center d-flex flex-column">
       <h1 className="bg-dark text-center text-light p-2 rounded text-uppercase mb-4 w-100">Naxos
@@ -29,7 +29,7 @@ class Login extends Component {
           Carriers of Naxolone can sign up to be notified whenever there is an overdose victim that uses this app to call for help.
         </p>
       </div>
-      <button className="btn btn-info font-weight-bold text-uppercase w-100" onClick={authAnon}>
+      <button className="btn btn-info font-weight-bold text-uppercase w-100 p-3" onClick={authAnon}>
         Log In Anonymously
       </button>
     </div>  
