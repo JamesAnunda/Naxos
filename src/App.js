@@ -58,12 +58,12 @@ componentDidMount () {
     auth.onAuthStateChanged((user) => {
       if (user) {
          this.setState({user})
-         console.log('logged in');
+         console.log('logged in'); 
          console.log(user.uid);
          navigate('/Role');
       } else{
         console.log('logged out');
-        navigate('/');
+        navigate('/Role');
       }
   });
   

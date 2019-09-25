@@ -2,7 +2,7 @@
   "name": "naxos",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://kirkh34.github.io/Naxos",
+  "homepage": "http://kirkh34.github.io/Naxos",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.24",
     "@fortawesome/free-solid-svg-icons": "^5.11.1",
@@ -44,6 +44,5 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.11.1"
-  } 
+  }
 }
- 

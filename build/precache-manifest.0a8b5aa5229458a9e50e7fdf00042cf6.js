@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "22fa63c8fa67027faacb90e2748a430e",
+    "revision": "b485afabf3dab649da5f09c5b56e9a46",
     "url": "/Naxos/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Naxos/static/css/2.22a7d4ef.chunk.css"
   },
   {
-    "revision": "a0013f1130a42fa648fd",
+    "revision": "5eb24129cbbcd16d955b",
     "url": "/Naxos/static/css/main.ca9f02e5.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Naxos/static/js/2.1a1ae6bb.chunk.js"
   },
   {
-    "revision": "a0013f1130a42fa648fd",
-    "url": "/Naxos/static/js/main.e9a65c45.chunk.js"
+    "revision": "5eb24129cbbcd16d955b",
+    "url": "/Naxos/static/js/main.e6bf80ba.chunk.js"
   },
   {
     "revision": "c6220fa8cea331d0325b",
