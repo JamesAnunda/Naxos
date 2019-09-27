@@ -122,8 +122,7 @@ silence(){
 
 
   render() {
-    const { lat, lng } = this.props;
-    const {help} = this.state;
+        const {help} = this.state;
 
 
     return (
@@ -139,8 +138,6 @@ silence(){
 :
 <div className="d-flex  h-100 w-100 p-4 m-0">
     <div className="align-self-center mx-auto">
-    <button onClick={this.toggleSwitch} className="btn btn-secondary">Toggle</button>
-    <p>{lat}{"  "}{lng}</p>
         <h3 className="text-center text-uppercase font-weight-bold mb-4">On standby for overdose victims</h3>
         <FontAwesomeIcon icon="heart" size="1x" className="heart text-danger text-center w-100 my-4"/>
         <button id="Role" className="btn btn-dark font-weight-bold text-uppercase w-100 p-4 mt-4" onClick={this.navigate}>Go Back</button>
