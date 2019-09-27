@@ -30,6 +30,10 @@ code {
 .loginContainer{
   background-image: url('bg.jpg');
 }
+.above{
+  position: relative;
+  z-index: 999;
+}
 
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */

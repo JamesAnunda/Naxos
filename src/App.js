@@ -7,13 +7,14 @@ import Login from './Login';
 import Home from './Home';
 import Role from './Role';
 import Helper from './Helper';
+import HelpWaiting from './HelpWaiting';
+import ShowLocation from './ShowLocation';
 
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeartbeat, faSpinner, faHeart} from '@fortawesome/free-solid-svg-icons';
+import { faHeartbeat, faSpinner, faHeart, faAmbulance} from '@fortawesome/free-solid-svg-icons';
 
-library.add(faHeartbeat, faSpinner, faHeart);
+library.add(faHeartbeat, faSpinner, faHeart, faAmbulance);
 
 
 
@@ -27,9 +28,9 @@ class App extends Component {
     super();
     this.state = {
       user: null,
-      phone: "+15555555555",
       lat: null,
-      lng: null
+      lng: null,
+      userID: null
     };
 
 
@@ -57,20 +58,23 @@ componentDidMount () {
 
     auth.onAuthStateChanged((user) => {
       if (user) {
-         this.setState({user})
+         this.setState({
+           user: user,
+           userID: user.uid
+          })
          console.log('logged in'); 
          console.log(user.uid);
          navigate('/Role');
       } else{
         console.log('logged out');
-        navigate('/Role');
+        navigate('/');
       }
   });
   
 
 
 
-  auth.setPersistence(Firebase.auth.Auth.Persistence.NONE)
+  auth.setPersistence(Firebase.auth.Auth.Persistence.LOCAL)
   .then(function() {
     // Existing and future Auth states are now persisted in the current
     // session only. Closing the window would clear any existing state even
@@ -81,8 +85,8 @@ componentDidMount () {
   })
   .catch(function(error) {
     // Handle Errors here.
-    var errorCode = error.code;
-    var errorMessage = error.message;
+    //var errorCode = error.code;
+    //var errorMessage = error.message;
   });
   
 }
@@ -123,8 +127,8 @@ authPhone() {
 authAnon() { 
 Firebase.auth().signInAnonymously().catch(function(error) {
   // Handle Errors here.
-  var errorCode = error.code;
-  var errorMessage = error.message;
+  //var errorCode = error.code;
+  //var errorMessage = error.message;
   // ...
 });
 };
@@ -160,6 +164,8 @@ Firebase.auth().signInAnonymously().catch(function(error) {
   <Login path='/' authAnon={this.authAnon} />
   <Home path='/Home' lat={this.state.lat} lng={this.state.lng}/>
   <Helper path='/Helper' lat={this.state.lat} lng={this.state.lng}/>
+  <HelpWaiting path='/HelpWaiting' lat={this.state.lat} lng={this.state.lng} userID={this.state.userID}/>
+  <ShowLocation path='/ShowLocation/:odLat/:odLng/:odUserID' lat={this.state.lat} lng={this.state.lng}/>
   <Role path='/Role'/>
 </Router>
 
