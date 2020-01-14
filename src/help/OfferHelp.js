@@ -1,5 +1,5 @@
 import React from 'react';
-import Alert from './alert.mp3';
+import Alert from '../assets/audio/alert.mp3';
 
 
 class OfferHelp extends React.Component {

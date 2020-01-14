@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import { Router, navigate } from '@reach/router';
-import Firebase, {auth} from './Firebase';
-import './App.css';
+import Firebase, {auth} from './api/Firebase';
+import './assets/css/App.css';
 
-import Login from './Login';
+import Login from './auth/Login';
 import Home from './Home';
-import Role from './Role';
-import Helper from './Helper';
-import HelpWaiting from './HelpWaiting';
-import ShowLocation from './ShowLocation';
+import Role from './role/Role';
+import Helper from './help/Helper';
+import HelpWaiting from './help/HelpWaiting';
+import ShowLocation from './geotrack/ShowLocation';
 
 
 import { library } from '@fortawesome/fontawesome-svg-core';

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Alert from './alert.mp3';
+import Alert from '../assets/audio/alert.mp3';
 import { navigate } from '@reach/router';
-import Firebase from './Firebase';
+import Firebase from '../api/Firebase';
 import Geodist from 'geodist';
 
 const audio = new Audio(Alert);

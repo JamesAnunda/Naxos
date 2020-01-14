@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { navigate } from '@reach/router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Firebase from './Firebase';
+import Firebase from '../api/Firebase';
 
 class HelpWaiting extends Component {
 

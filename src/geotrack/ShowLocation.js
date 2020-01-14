@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import GoogleMap from './GoogleMap';
 import { navigate } from '@reach/router';
-import Firebase from './Firebase';
+import Firebase from '../api/Firebase';
 
 class ShowLocation extends Component {
 

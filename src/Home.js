@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 //import GoogleMap from './GoogleMap';
-import OfferHelp from './OfferHelp';
+import OfferHelp from './help/OfferHelp';
 
 class Home extends Component {
 
