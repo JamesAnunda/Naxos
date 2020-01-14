@@ -13,6 +13,7 @@ class Login extends Component {
 
   render() {
     const { authAnon } = this.props;
+    const {authCarrier} = this.props;
 
 
     return (
@@ -30,7 +31,10 @@ class Login extends Component {
         </p>
       </div>
       <button className="btn btn-info font-weight-bold text-uppercase w-100 p-3" onClick={authAnon}>
-        Log In Anonymously
+        Login Anonymously
+      </button>
+      <button className="btn btn-info font-weight-bold text-uppercase w-100 p-3 m-3" onClick={authCarrier}>
+        Carrier Login
       </button>
     </div>  
   </div>
